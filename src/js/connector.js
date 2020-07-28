@@ -19,15 +19,17 @@ window.TrelloPowerUp.initialize({
             path: 'email.html',
             type: 'public'
           });
-          const emailHtml = Base64.decode(fileContent.data.content)
-      
-          // convert html to markdown
-          const turndownService = new window.TurndownService();
-          const emailMarkdown = turndownService.turndown(emailHtml);
-          // console.log('emailMarkdown', emailMarkdown)
-          const JustTheEmailcontent = emailMarkdown.split('Hi there,')[1];
+        //   const emailHtml = Base64.decode(fileContent.data.content)
+          console.log('fileContent', fileContent)
+        //   // convert html to markdown
+        //   const turndownService = new window.TurndownService();
+        //   const emailMarkdown = turndownService.turndown(emailHtml);
+        //   // console.log('emailMarkdown', emailMarkdown)
+        //   const JustTheEmailcontent = emailMarkdown.split('Hi there,')[1];
 
-          console.log('just the content', JustTheEmailcontent)
+        //   console.log('just the content', JustTheEmailcontent);
+
+          
 
           // 2. create a pull request with the data from the card
 
