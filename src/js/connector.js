@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import { Octokit } from "@octokit/core";
 import { Base64 } from 'js-base64';
 import Trello from 'trello';
+const hmm = process.env.GITHUB_AUTH
 
 window.TrelloPowerUp.initialize({
     'card-badges': function (t, opts) {
@@ -11,7 +12,7 @@ window.TrelloPowerUp.initialize({
 
 
           // 1. if template doesnt exist create the templates as card in trello
-          const octokit = new Octokit({ auth: process.env.GITHUB_AUTH });
+          const octokit = new Octokit({ auth: hmm });
           const fileContent = await octokit.request('GET /repos/ioetbc/email-trello-cms/contents/email.html', {
             owner: 'ioetbc',
             repo: 'email-trello-cms',
