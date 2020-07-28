@@ -9,6 +9,9 @@
     "build": "parcel build src/html/*.html"
   },
   "dependencies": {
+    "@octokit/core": "^3.1.1",
+    "Base64": "^1.1.0",
+    "dotenv": "^8.2.0",
     "parcel-bundler": "^1.12.4"
   }
 }
