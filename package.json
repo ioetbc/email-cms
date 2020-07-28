@@ -1,0 +1,14 @@
+{
+  "name": "email-cms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ioetbc/email-cms.git",
+  "author": "William Cole <ioetbc@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/html/*.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
