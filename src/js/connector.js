@@ -7,7 +7,7 @@ dotenv.config()
 window.TrelloPowerUp.initialize({
     'card-badges': function (t, opts) {
       return t.card('all')
-      .then(data => {
+      .then(async data => {
           console.log('data', data)
 
 
