@@ -19,8 +19,8 @@ window.TrelloPowerUp.initialize({
             path: 'email.html',
             type: 'public'
           });
-        //   const emailHtml = Base64.decode(fileContent.data.content)
           console.log('fileContent', fileContent)
+        //   const emailHtml = Base64.decode(fileContent.data.content)
         //   // convert html to markdown
         //   const turndownService = new window.TurndownService();
         //   const emailMarkdown = turndownService.turndown(emailHtml);
