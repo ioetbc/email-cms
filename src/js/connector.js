@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Octokit } from "@octokit/core";
 import { Base64 } from 'js-base64';
 import Trello from 'trello';
-const hmm = process.env.GITHUB_AUTH
+const hmm = 'he'
 
 window.TrelloPowerUp.initialize({
     'card-badges': function (t, opts) {
