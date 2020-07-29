@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import { Octokit } from "@octokit/core";
 import { Base64 } from 'js-base64';
 import Trello from 'trello';
-const hmm = 'he'
+dotenv.config()
 
 window.TrelloPowerUp.initialize({
     'card-badges': function (t, opts) {
