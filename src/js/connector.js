@@ -11,7 +11,7 @@ window.TrelloPowerUp.initialize({
 
 
           // 1. if template doesnt exist create the templates as card in trello
-          const octokit = new Octokit({ auth: process.env.GITHUB_AUTH });
+          const octokit = new Octokit({ auth: '%%GITHUB_AUTH%%' });
           const fileContent = await octokit.request('GET /repos/ioetbc/email-trello-cms/contents/email.html', {
             owner: 'ioetbc',
             repo: 'email-trello-cms',
