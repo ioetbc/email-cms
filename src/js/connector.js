@@ -6,11 +6,14 @@ console.log('data')
 window.TrelloPowerUp.initialize({
     'card-badges': function (t, opts) {
       console.log('heufheufhuefhefhuefhu')
-      return t.card('all')
-      .then(async data => {
-        console.log('just the data', data)
-          return []
-      })
-      .catch(error => console.log('error hmm', error))
+      const cards =  t.card('all');
+
+      console.log('cards????????', cards)
+
+      // .then(async data => {
+      //   console.log('just the data', data)
+      //     return []
+      // })
+      // .catch(error => console.log('error hmm', error))
     }
 });
