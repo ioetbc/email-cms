@@ -11,12 +11,8 @@
   "dependencies": {
     "@octokit/core": "^3.1.1",
     "Base64": "^1.1.0",
-    "dotenv": "^8.2.0",
     "js-base64": "^3.3.2",
     "parcel-bundler": "^1.12.4",
     "trello": "^0.10.0"
-  },
-  "browser": {
-    "fs": false
   }
 }
