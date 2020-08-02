@@ -8,9 +8,8 @@ window.TrelloPowerUp.initialize({
       console.log('heufheufhuefhefhuefhu')
       return t.card('all')
       .then(async data => {
-          return [{
-              text: card.idShort
-          }]
+        console.log('just the data', data)
+          return []
       })
       .catch(error => console.log('error hmm', error))
     }
